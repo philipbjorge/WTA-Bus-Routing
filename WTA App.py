@@ -37,7 +37,7 @@ leaveTime = raw_input('What is your departure time (in 24-h format? ')
 lt = leaveTime.split(':')
 finalTime = int(lt[0]*60) + int(lt[1])
 
-geo = geocoders.Google('ABQIAAAAvaUMwifr0cnMnRZBCTqakRQ3CNZRIJSQeL6Igs3rwxcD1MUFWRQ5kLVLY8Rw6NfrZ-DkmklP0dA0AA')
+geo = geocoders.Google('YOUR_API_KEY')
 sPlace, sGPS = geo.geocode(startAddress)
 ePlace, eGPS = geo.geocode(endAddress)
 
